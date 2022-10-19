@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   //Para não ultrapssar o tamanho do componente pai
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+.interface {
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+    gap: .5em;
+    border-radius: .5em;
+    background-color: #ddd;
+    
+    & h3 {
+        font-size: .7em;
+        font-weight: 300;
+        color: #333;
+        margin: .5em 0;
+    }
+
+    & .tela {
+        text-align: right;
+        background-color: #fafafa;
+        overflow-wrap: break-word;
+        padding: .2em .5em;
+        
+        & .telaSup {
+            min-height: 1.6em;
+            color: #777;
+        }
+
+        & .telaInf {
+            min-height: 1.2em;
+            font-size: 1.3em;
+            font-weight: 700;
+        }
+    }
+
+    & .teclado {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: .5em;
+    }
+}
