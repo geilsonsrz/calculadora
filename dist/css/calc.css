@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #aaa;
+  background-color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,17 +20,15 @@ body {
   padding: 0.5em;
   gap: 0.5em;
   border-radius: 0.5em;
-  background-color: #ddd;
+  background-color: #aaa;
 }
 .interface h3 {
   font-size: 0.7em;
   font-weight: 300;
-  color: #333;
   margin: 0.5em 0;
 }
 .interface .tela {
   text-align: right;
-  background-color: #fafafa;
   overflow-wrap: break-word;
   padding: 0.2em 0.5em;
 }
@@ -46,7 +44,32 @@ body {
 .interface .teclado {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 0.5em;
+  gap: 0.2em;
+}
+.interface .teclado button {
+  border: 0.1em solid transparent;
+  border-radius: 0.1em;
+  height: 3em;
+  font-size: 1.2em;
+  background-color: #cecece;
+  cursor: pointer;
+}
+.interface .teclado button:hover {
+  background-color: #ededed;
+  border-color: #888;
+}
+.interface .teclado button:active {
+  transform: scale(0.98);
+}
+.interface .teclado .btn-number {
+  background-color: #fafafa;
+}
+.interface .teclado .btn-igual {
+  grid-column: span 2;
+  background-color: #75abc7;
+}
+.interface .teclado .btn-igual:hover {
+  background-color: #3a91d8;
 }
 
 /*# sourceMappingURL=calc.css.map */
